@@ -24,7 +24,7 @@ jobs:
       - name: Test GET-request
         shell: bash
         run: |
-          chmod +x ./test/integration-tests.sh
-          ./test/integration-tests.sh
+          chmod +x /test/integration-tests.sh
+          /test/integration-tests.sh
       - name: Stop app
         run: kill -15 `cat app_pid`
